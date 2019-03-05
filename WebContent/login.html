@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/css/mdb.min.css"
+	rel="stylesheet">
+<meta charset="ISO-8859-1">
+<title>login</title>
+<style>
+#input {
+	width: 200px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	float: center;
+	/*   height: 100px;
+    width: 100px;
+   */
+	font-size: 50px;
+	letter-spacing: 1px;
+	text-align: center;
+	color: black;
+}
+
+body {
+	background-image: url("image/ft.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 1400px 600px;
+	background-opacity: 0.2;
+}
+
+#login {
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	height: 500px;
+	width: 600px;
+	font-size: 24px;
+	letter-spacing: 1px;
+	color: black;
+	padding-top: 70px;
+	padding-left: 70px;
+	background: rgba(211, 211, 211, 0.19);
+}
+
+.center {
+	color: black;
+	padding: 5px 10px;
+	font-size: 18px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.h3 {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+	<h1>Online Quiz</h1>
+	<div id="login">
+		<h2>Login &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+				href="register.html" style="text-decoration: none;">New
+					User</a>
+		</h2>
+
+		<form method="post" action="LoginServlet">
+			<label for="name">Name : </label>
+			<div id="input">
+				<input class="form-control" type="text" required id="name"
+					name="name" placeholder=" Enter your name" autofocus>
+			</div>
+			<br> <label for="password">Password : </label>
+			<div id="input">
+
+				<input class="form-control" type="password" required name="password"
+					id="password" placeholder="Enter password"><br>
+			</div>
+			<div class="center">
+				<p>
+					Forgot Password? <a href="" data-toggle="modal"
+						data-target="#pwdModal" id="forgetpass">Click here</a>
+				</p>
+			</div>
+
+
+			<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+	</div>
+
+</body>
+</html>
